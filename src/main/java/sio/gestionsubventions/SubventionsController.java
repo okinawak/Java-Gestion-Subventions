@@ -53,7 +53,7 @@ public class SubventionsController implements Initializable
         cboAnnees.getItems().addAll(2020,2021,2022,2023,2024,2025);
         cboAnnees.getSelectionModel().selectFirst();
 
-
+    for(String i; )
 
         // Jeu d'essais au cas où :)
 //        Structure structure1 = new Structure("Structure 1",1000);
@@ -130,7 +130,56 @@ public class SubventionsController implements Initializable
     @FXML
     public void btnAffecterSubventionClicked(Event event)
     {
-
+        //erreur si:
+        //le champ Structure est vide
+        //le champ Subvention est vide
+        //la valeur est negative
+        //aucune ville n'est selectionnée
+        //aucun secteur n'est selectionné
+        if (lvVilles.getSelectionModel().getSelectedItem()==null){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Choix de la ville");
+            alert.setHeaderText("");
+            alert.setContentText("Veuillez selectionner une ville");
+            alert.showAndWait();
+        }
+        else if (lvSecteurs.getSelectionModel().getSelectedItem()==null){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Choix du secteur");
+            alert.setHeaderText("");
+            alert.setContentText("Veuillez selectionner un secteur");
+            alert.showAndWait();
+        }
+        else if(txtNomStructure.getText()==""){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Choix de la structure");
+            alert.setHeaderText("");
+            alert.setContentText("Veuillez selectionner une structure");
+            alert.showAndWait();
+        }
+        else if (txtMontant.getText()==""){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Saisie du montant");
+            alert.setHeaderText("");
+            alert.setContentText("Veuillez saisir un montant");
+            alert.showAndWait();
+        }
+        else if (!(Integer.parseInt(txtMontant.getText().toString())>0)){
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Saisie du montant");
+            alert.setHeaderText("");
+            alert.setContentText("Votre montant doit etre positif");
+            alert.showAndWait();
+        }
+        else {
+            ArrayList<Structure> lesStructures=new ArrayList<>();
+            TreeMap<String, ArrayList<Structure>> lesAnnees = new TreeMap();
+            HashMap<String,TreeMap> lesSecteurs=new HashMap();
+            HashMap<> lesVilles=new HashMap();
+            if (lesSubventions<lvVilles.getSelectionModel().getSelectedItem(),HashMap<lvSecteurs.getSelectionModel().getSelectedItem(),TreeMap<cboAnnees.getSelectionModel().getSelectedItem(),>>>)
+            {
+            }
+        }
     }
 
     @FXML
