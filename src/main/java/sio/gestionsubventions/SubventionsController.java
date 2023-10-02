@@ -53,64 +53,64 @@ public class SubventionsController implements Initializable
         cboAnnees.getItems().addAll(2020,2021,2022,2023,2024,2025);
         cboAnnees.getSelectionModel().selectFirst();
 
-    for(String i; )
 
-        // Jeu d'essais au cas où :)
-//        Structure structure1 = new Structure("Structure 1",1000);
-//        Structure structure2 = new Structure("Structure 2",2000);
-//        Structure structure3 = new Structure("Structure 3",3000);
-//        Structure structure4 = new Structure("Structure 4",4000);
-//        Structure structure5 = new Structure("Structure 5",5000);
-//        Structure structure6 = new Structure("Structure 6",6000);
-//        Structure structure7 = new Structure("Structure 7",7000);
-//        Structure structure8 = new Structure("Structure 8",8000);
-//        Structure structure9 = new Structure("Structure 9",9000);
-//
-//        ArrayList<Structure> lesStructuresDeBordeaux = new ArrayList<>();
-//        lesStructuresDeBordeaux.add(structure1);
-//        lesStructuresDeBordeaux.add(structure2);
-//        lesStructuresDeBordeaux.add(structure3);
-//
-//        ArrayList<Structure> lesStructuresDeNantes = new ArrayList<>();
-//        lesStructuresDeNantes.add(structure4);
-//        lesStructuresDeNantes.add(structure5);
-//        lesStructuresDeNantes.add(structure6);
-//
-//        ArrayList<Structure> lesStructuresDeParis = new ArrayList<>();
-//        lesStructuresDeParis.add(structure7);
-//        lesStructuresDeParis.add(structure8);
-//        lesStructuresDeParis.add(structure9);
-//
-//        TreeMap<Integer,ArrayList<Structure>> lesAnneesDeBordeaux = new TreeMap<>();
-//        lesAnneesDeBordeaux.put(2020, lesStructuresDeBordeaux);
-//        lesAnneesDeBordeaux.put(2021, lesStructuresDeBordeaux);
-//        lesAnneesDeBordeaux.put(2022, lesStructuresDeBordeaux);
-//
-//        TreeMap<Integer,ArrayList<Structure>> lesAnneesDeNantes = new TreeMap<>();
-//        lesAnneesDeNantes.put(2020, lesStructuresDeNantes);
-//        lesAnneesDeNantes.put(2021, lesStructuresDeNantes);
-//        lesAnneesDeNantes.put(2022, lesStructuresDeNantes);
-//        lesAnneesDeNantes.put(2023, lesStructuresDeNantes);
-//
-//        TreeMap<Integer,ArrayList<Structure>> lesAnneesDeParis = new TreeMap<>();
-//        lesAnneesDeParis.put(2022, lesStructuresDeParis);
-//        lesAnneesDeParis.put(2023, lesStructuresDeParis);
-//        lesAnneesDeParis.put(2024, lesStructuresDeParis);
-//
-//        HashMap<String,TreeMap<Integer,ArrayList<Structure>>> lesSecteursDeBordeaux = new HashMap<>();
-//        lesSecteursDeBordeaux.put("Santé", lesAnneesDeBordeaux);
-//        lesSecteursDeBordeaux.put("Sport", lesAnneesDeBordeaux);
-//
-//        HashMap<String,TreeMap<Integer,ArrayList<Structure>>> lesSecteursDeNantes = new HashMap<>();
-//        lesSecteursDeNantes.put("Education", lesAnneesDeNantes);
-//        lesSecteursDeNantes.put("Culture", lesAnneesDeNantes);
-//
-//        HashMap<String,TreeMap<Integer,ArrayList<Structure>>> lesSecteursDeParis = new HashMap<>();
-//        lesSecteursDeParis.put("Culture", lesAnneesDeParis);
-//
-//        lesSubventions.put("Bordeaux",lesSecteursDeBordeaux);
-//        lesSubventions.put("Nantes",lesSecteursDeNantes);
-//        lesSubventions.put("Paris",lesSecteursDeParis);
+
+         //Jeu d'essais au cas où :)
+        Structure structure1 = new Structure("Structure 1",1000);
+        Structure structure2 = new Structure("Structure 2",2000);
+        Structure structure3 = new Structure("Structure 3",3000);
+        Structure structure4 = new Structure("Structure 4",4000);
+        Structure structure5 = new Structure("Structure 5",5000);
+        Structure structure6 = new Structure("Structure 6",6000);
+        Structure structure7 = new Structure("Structure 7",7000);
+        Structure structure8 = new Structure("Structure 8",8000);
+        Structure structure9 = new Structure("Structure 9",9000);
+
+        ArrayList<Structure> lesStructuresDeBordeaux = new ArrayList<>();
+        lesStructuresDeBordeaux.add(structure1);
+        lesStructuresDeBordeaux.add(structure2);
+        lesStructuresDeBordeaux.add(structure3);
+
+        ArrayList<Structure> lesStructuresDeNantes = new ArrayList<>();
+        lesStructuresDeNantes.add(structure4);
+        lesStructuresDeNantes.add(structure5);
+        lesStructuresDeNantes.add(structure6);
+
+        ArrayList<Structure> lesStructuresDeParis = new ArrayList<>();
+        lesStructuresDeParis.add(structure7);
+        lesStructuresDeParis.add(structure8);
+        lesStructuresDeParis.add(structure9);
+
+        TreeMap<Integer,ArrayList<Structure>> lesAnneesDeBordeaux = new TreeMap<>();
+        lesAnneesDeBordeaux.put(2020, lesStructuresDeBordeaux);
+        lesAnneesDeBordeaux.put(2021, lesStructuresDeBordeaux);
+        lesAnneesDeBordeaux.put(2022, lesStructuresDeBordeaux);
+
+        TreeMap<Integer,ArrayList<Structure>> lesAnneesDeNantes = new TreeMap<>();
+        lesAnneesDeNantes.put(2020, lesStructuresDeNantes);
+        lesAnneesDeNantes.put(2021, lesStructuresDeNantes);
+        lesAnneesDeNantes.put(2022, lesStructuresDeNantes);
+        lesAnneesDeNantes.put(2023, lesStructuresDeNantes);
+
+        TreeMap<Integer,ArrayList<Structure>> lesAnneesDeParis = new TreeMap<>();
+        lesAnneesDeParis.put(2022, lesStructuresDeParis);
+        lesAnneesDeParis.put(2023, lesStructuresDeParis);
+        lesAnneesDeParis.put(2024, lesStructuresDeParis);
+
+        HashMap<String,TreeMap<Integer,ArrayList<Structure>>> lesSecteursDeBordeaux = new HashMap<>();
+        lesSecteursDeBordeaux.put("Santé", lesAnneesDeBordeaux);
+        lesSecteursDeBordeaux.put("Sport", lesAnneesDeBordeaux);
+
+        HashMap<String,TreeMap<Integer,ArrayList<Structure>>> lesSecteursDeNantes = new HashMap<>();
+        lesSecteursDeNantes.put("Education", lesAnneesDeNantes);
+        lesSecteursDeNantes.put("Culture", lesAnneesDeNantes);
+
+        HashMap<String,TreeMap<Integer,ArrayList<Structure>>> lesSecteursDeParis = new HashMap<>();
+        lesSecteursDeParis.put("Culture", lesAnneesDeParis);
+
+        lesSubventions.put("Bordeaux",lesSecteursDeBordeaux);
+        lesSubventions.put("Nantes",lesSecteursDeNantes);
+        lesSubventions.put("Paris",lesSecteursDeParis);
 
     }
 
@@ -175,7 +175,7 @@ public class SubventionsController implements Initializable
             ArrayList<Structure> lesStructures=new ArrayList<>();
             TreeMap<String, ArrayList<Structure>> lesAnnees = new TreeMap();
             HashMap<String,TreeMap> lesSecteurs=new HashMap();
-            HashMap<> lesVilles=new HashMap();
+            HashMap<String,HashMap> lesVilles=new HashMap();
             if (lesSubventions<lvVilles.getSelectionModel().getSelectedItem(),HashMap<lvSecteurs.getSelectionModel().getSelectedItem(),TreeMap<cboAnnees.getSelectionModel().getSelectedItem(),>>>)
             {
             }
@@ -185,6 +185,20 @@ public class SubventionsController implements Initializable
     @FXML
     public void lvVillesStatsClicked(Event event)
     {
+        String maVille = lvVillesStats.getSelectionModel().getSelectedItem().toString();
+        TreeMap<String,Integer> parSecteur;
+        TreeMap<Integer,Integer>parAnnee;
+        TreeItem root;
+        root = new TreeItem("Par Secteur");
+        HashMap secteurSelec=new HashMap();
+        switch (lvVillesStats.getSelectionModel().getSelectedItem()){
+            case 1 Bordeaux:
+                secteurSelec= lesSecteursDeBordeaux;
+
+        }
+            for (String sec : )
+            root.setExpanded(true);
+            tvMontantsParSecteurs.setRoot(root);
 
     }
 }
